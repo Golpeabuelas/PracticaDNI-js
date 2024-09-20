@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular DNI</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <script src="Funcionalidad.js"></script>
+</head>
+<body>
+    <div class="Contenedor">
+        
+        <form id="Formulario" onsubmit="Verificar(this)">
+            
+            <h1 class="Texto">Escribe los números de tu DNI</h1>
+                <input type="text" class="Input" id="Numero" oninput="SoloNumeros(this)" placeholder="Solo números">
+                      
+                <br>
+        
+            <h2 class="Texto">Escribe la letra de tu DNI</h2>
+                <input type="text" class="Input" id="Letra" oninput="SoloUna(this)" placeholder="Letra capital">
+                
+                <br>
+                
+                <input type="submit" class="Boton" value="Verificar" >
+        </form>
+    </div>
+</body>
+</html>
